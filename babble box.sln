@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F82F6C34-E373-ED5E-F934-EE4E1BAF5CA1}") = "babble box", "Assembly-CSharp.csproj", "{4C0F3B5B-A8AB-5975-2F6C-436C8E9A14FE}"
+EndProject
+Project("{F82F6C34-E373-ED5E-F934-EE4E1BAF5CA1}") = "babble box", "Assembly-CSharp-Editor.csproj", "{D59AD611-69C8-DB1F-F9FC-3B82B4F65A66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C0F3B5B-A8AB-5975-2F6C-436C8E9A14FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0F3B5B-A8AB-5975-2F6C-436C8E9A14FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0F3B5B-A8AB-5975-2F6C-436C8E9A14FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0F3B5B-A8AB-5975-2F6C-436C8E9A14FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59AD611-69C8-DB1F-F9FC-3B82B4F65A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59AD611-69C8-DB1F-F9FC-3B82B4F65A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59AD611-69C8-DB1F-F9FC-3B82B4F65A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59AD611-69C8-DB1F-F9FC-3B82B4F65A66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
