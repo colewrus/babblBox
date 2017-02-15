@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cc28fee492a990549963da9b02535627
-timeCreated: 1483923933
+timeCreated: 1487124409
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,6 +13,7 @@ TextureImporter:
     21300012: tileset_6
     21300014: tileset_7
     21300016: tileset_8
+    21300018: tileset_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -173,6 +174,19 @@ TextureImporter:
         y: 594
         width: 110
         height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_9
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 845
+        width: 260
+        height: 71
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
