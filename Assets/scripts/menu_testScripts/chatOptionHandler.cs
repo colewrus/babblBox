@@ -14,7 +14,6 @@ public class chatOptionHandler : MonoBehaviour {
 		if (translate) {
 			menuGM.instance.translate_chat ();
 		} else if (!translate) {
-			print ("test");
 			menuGM.instance.conversation_chat ();
 		}
 	}

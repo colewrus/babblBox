@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\menu_testScripts\chatOptionHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\menu_testScripts\card_UI_Script.cs">
     <Files>
-      <File FileName="Assets\scripts\menu_testScripts\objMenu.cs" Line="11" Column="32" />
-      <File FileName="Assets\scripts\menu_testScripts\menuGM.cs" Line="84" Column="38" />
-      <File FileName="Assets\scripts\menu_testScripts\chatOptionHandler.cs" Line="17" Column="4" />
+      <File FileName="Assets\scripts\menu_testScripts\objMenu.cs" Line="24" Column="21" />
+      <File FileName="Assets\scripts\menu_testScripts\menuGM.cs" Line="60" Column="50" />
+      <File FileName="Assets\scripts\menu_testScripts\chatOptionHandler.cs" Line="16" Column="27" />
+      <File FileName="Assets\scripts\menu_testScripts\card_UI_Script.cs" Line="7" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

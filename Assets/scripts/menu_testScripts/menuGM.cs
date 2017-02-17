@@ -55,6 +55,11 @@ public class menuGM : MonoBehaviour {
 
 	}
 
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			print (wordList_cards [2].transform.position);
+		}
+	}
 
 	public void chat_Start(){ //open up the chat bubble 
 		ObjectGone (); //reset camera, remove initial panels
@@ -82,7 +87,12 @@ public class menuGM : MonoBehaviour {
 
 	public void conversation_chat(){ //begin the conversation
 		panel_Conversation.SetActive(true);
-
+		panel_wordBank.SetActive (true);
+		mainBubble.SetActive (false);
+		chatCheck.SetActive (false);
+		questAdvance.SetActive (false); 
+		panel_Conversation.GetComponentInChildren<Text> ().text = currentObj.GetComponent<objMenu> ().germanText;
+		cardCreate (0);
 	}
 
 
@@ -96,6 +106,7 @@ public class menuGM : MonoBehaviour {
 		
 		for (int i = 0; i < wordList_cards.Count; i++) {
 			wordList_cards [i].GetComponentInChildren<Text> ().text = wordList_string [i + (position * 4)];
+
 		}
 	}
 
