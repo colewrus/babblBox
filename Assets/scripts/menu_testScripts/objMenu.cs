@@ -7,6 +7,8 @@ public class objMenu : MonoBehaviour {
 	public string topString;
 	public string botString;
 	public bool learned; //this is to make sure you only learn the word once
+	public string germanText;
+	public string translationText;
 	Text topText;
 	Text botText;
 	Vector3 camPos;
@@ -20,7 +22,7 @@ public class objMenu : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		if (!objectMenu) {
+		if (!objectMenu && !menuGM.instance.chatActive) {
 			menuGM.instance.currentObj = this.gameObject;
 			menuGM.instance.ObjectFocus ();
 		} else {

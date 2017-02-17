@@ -9,7 +9,7 @@ public class menuGM : MonoBehaviour {
 
 	//[HideInInspector]
 	public GameObject currentObj; //placeholder for the active object being zoomed in on
-	public List<string> wordBank;
+	public List<string> wordList_string;
 	public GameObject dasPanel; //the "was ist das" panel
 	public Text dasPanel_text;
 	public Image dasPanel_img;
@@ -22,6 +22,14 @@ public class menuGM : MonoBehaviour {
 	public GameObject mainBubble;
 	public GameObject chatCheck;  //if tapped pulls up panel that shows translation of chat bubble - triggers new words being learned
 	public GameObject questAdvance; //workspace panel and 
+	public bool chatActive; //helps manage when we move from the panel back to the object
+	public Text dasPanel_GermanText;
+
+	//---------- Conversation variables -------//
+	public GameObject panel_wordBank;
+	public List<GameObject> wordList_cards; //gonna need to instantiate all the cards for the words. Attach the string to the prefab
+	public GameObject panel_Conversation;
+
 
 	void Awake(){
 		if (instance == null)
@@ -41,14 +49,18 @@ public class menuGM : MonoBehaviour {
 		questAdvance.SetActive (false);
 		panelTop.SetActive (false);
 		panelBot.SetActive (false);
+		chatActive = false;
+		panel_Conversation.SetActive (false);
+		panel_wordBank.SetActive (false);
+
 	}
 
 
-	public void chat_Start(){
+	public void chat_Start(){ //open up the chat bubble 
 		ObjectGone (); //reset camera, remove initial panels
 		wordLearn(); //add word to wordbank
 		//add glow behavior for the ui item
-
+		chatActive = true;
 		mainBubble.SetActive (true);
 		mainBubble.transform.position = new Vector3 (currentObj.transform.position.x, currentObj.transform.position.y + 1.5f, -1);
 		Camera.main.transform.position = new Vector3 (mainBubble.transform.position.x, mainBubble.transform.position.y, -10);
@@ -59,10 +71,32 @@ public class menuGM : MonoBehaviour {
 		dasPanel_img.gameObject.SetActive (false);
 	}
 
-	public void wordLearn(){ //adds a word to the bank
+	public void translate_chat(){ //translate what was in the chat bubble
+		dasPanel.SetActive (true);
+		//set the german text
+		dasPanel_GermanText.text = currentObj.GetComponent<objMenu>().germanText;
+		dasPanel_text.text = currentObj.GetComponent<objMenu> ().translationText;
+		dasPanel_GermanText.gameObject.SetActive (true);
+
+	}
+
+	public void conversation_chat(){ //begin the conversation
+		panel_Conversation.SetActive(true);
+
+	}
+
+
+	public void wordLearn(){ //adds a word to the bank  -------------!!!!!!!!!!!!------------need an object pool
 		if(!currentObj.GetComponent<objMenu>().learned) 
-			wordBank.Add (currentObj.GetComponent<objMenu> ().topString);
+			wordList_string.Add(currentObj.GetComponent<objMenu> ().topString);
 			currentObj.GetComponent<objMenu> ().learned = true;
+	}
+
+	public void cardCreate(int position){ //position is the scroll wheel for this, steps ahead enough spaces in the string list to properly update the card
+		
+		for (int i = 0; i < wordList_cards.Count; i++) {
+			wordList_cards [i].GetComponentInChildren<Text> ().text = wordList_string [i + (position * 4)];
+		}
 	}
 
 
@@ -77,7 +111,8 @@ public class menuGM : MonoBehaviour {
 
 	public void dasPanel_Close(){ 
 		dasPanel.SetActive (false);
-		ObjectFocus ();
+		if(!chatActive)
+			ObjectFocus ();
 	}
 
 
