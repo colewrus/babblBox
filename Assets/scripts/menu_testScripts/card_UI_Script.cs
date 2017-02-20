@@ -20,7 +20,6 @@ public class card_UI_Script : MonoBehaviour {
 
 	void Update(){
 		if (!selected) {
-			print ("update");
 			transform.position = Vector3.Lerp (transform.position, startPos, 2 * Time.deltaTime);
 		}
 	}

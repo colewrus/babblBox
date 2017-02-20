@@ -85,6 +85,14 @@ public class menuGM : MonoBehaviour {
 
 	}
 
+	public void close_Translate(){
+		panel_Conversation.SetActive (false);
+		panel_wordBank.SetActive (false);
+		questAdvance.SetActive (false);
+		chatActive = false;
+	
+	}
+
 	public void conversation_chat(){ //begin the conversation
 		panel_Conversation.SetActive(true);
 		panel_wordBank.SetActive (true);
