@@ -52,6 +52,7 @@
      <Compile Include="Assets\art assets\Tiled2Unity\Scripts\Runtime\TileObject.cs" />
      <Compile Include="Assets\art assets\Tiled2Unity\Scripts\Runtime\TiledInitialShaderProperties.cs" />
      <Compile Include="Assets\art assets\Tiled2Unity\Scripts\Runtime\TiledMap.cs" />
+     <Compile Include="Assets\scripts\generic\basic_WASD.cs" />
      <Compile Include="Assets\scripts\german-01\germanGM.cs" />
      <Compile Include="Assets\scripts\german-01\missionObject.cs" />
      <Compile Include="Assets\scripts\german-01\obj_Convo.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\scripts\testScripts\playerScript.cs" />
      <Compile Include="Assets\scripts\testScripts\quest_Class.cs" />
      <Compile Include="Assets\scripts\testScripts\speechBubble.cs" />
+     <Compile Include="Assets\scripts\tri_bubble\mng_Bubble.cs" />
      <None Include="Assets\art assets\Tiled2Unity\Imported\Wit.Prefab.2.tiled2unity.xml" />
      <None Include="Assets\art assets\Tiled2Unity\Shaders\shaDefault.shader" />
      <None Include="Assets\art assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
