@@ -3,12 +3,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\tri_bubble\mng_Bubble.cs">
     <Files>
       <File FileName="Assets\scripts\menu_testScripts\objMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\menu_testScripts\menuGM.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\menu_testScripts\menuGM.cs" Line="34" Column="1" />
       <File FileName="Assets\scripts\menu_testScripts\chatOptionHandler.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\menu_testScripts\card_UI_Script.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\generic\basic_WASD.cs" Line="25" Column="24" />
+      <File FileName="Assets\scripts\generic\basic_WASD.cs" Line="9" Column="2" />
       <File FileName="Assets\scripts\testScripts\playerScript.cs" Line="92" Column="1" />
-      <File FileName="Assets\scripts\tri_bubble\mng_Bubble.cs" Line="36" Column="37" />
+      <File FileName="Assets\scripts\tri_bubble\mng_Bubble.cs" Line="53" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
